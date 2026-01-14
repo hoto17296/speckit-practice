@@ -7,6 +7,7 @@
   "customizations": {
     "vscode": {
       "extensions": [
+        "anthropic.claude-code",
         "charliermarsh.ruff",
         "cweijan.vscode-database-client2",
         "ms-python.python"

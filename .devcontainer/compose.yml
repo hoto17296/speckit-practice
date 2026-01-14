@@ -8,7 +8,8 @@ services:
       DATABASE_PASSWORD: deadbeef
     volumes:
       - ..:/workspace:cached
-      - cache:/root/.cache:cached
+      - ./home/.cache:/root/.cache:delegated
+      - ./home/.claude:/root/.claude:delegated
     working_dir: /workspace
 
   postgres:
@@ -20,5 +21,4 @@ services:
       POSTGRES_PASSWORD: deadbeef
 
 volumes:
-  cache:
   postgres:
